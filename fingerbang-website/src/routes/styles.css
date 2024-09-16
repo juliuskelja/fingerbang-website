@@ -342,7 +342,7 @@ article {
     .trailer {
         width: 90vw;
     }
-    .hamburger {
+    .burgericons {
         visibility: hidden;
     }
 
@@ -361,7 +361,7 @@ article {
     .navitem {
         display:none;
     }
-    .hamburger {
+    .burgericons {
         visibility: visible;
     }
     .modal {
