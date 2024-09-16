@@ -19,6 +19,7 @@
 	if (browser) {
 		let modalShown = localStorage.getItem('modalShown');
 		if (!modalShown) {
+			handleClick();
 			localStorage.setItem('modalShown', 1);
 		}
 	}

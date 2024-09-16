@@ -271,11 +271,37 @@ article {
 
 /* Extra-small devices such as small phones (less than 640px) */
 @media screen and (max-width: 640px) {
+    #toptext {
+        font-size: 0.9rem !important;
+    }
     .trailer {
 		width: 80vw;
 	}
     :root {
         --gun-pixelsize: 2 !important;
+    }
+    #message1, #message3 {
+        font-size: 0.9rem !important;
+    }
+    #message2 {
+        font-size: 1rem !important;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .contents {
+        padding: 1rem !important;
+        border: 0px solid white !important; 
+    }
+    .modalBtn {
+        height: 50px !important;
+		width: 200px !important;
+        font-size: 0.9rem !important;
+    }
+    .modal {
+        margin: 0.5rem !important;
+        margin-top: 0 !important;
+
     }
 }
 
@@ -306,6 +332,12 @@ article {
     }
     .hamburger {
         visibility: visible;
+    }
+    .modal {
+        max-width: 95vw !important;
+    }
+    .contents {
+        min-width: 100%;
     }
 
 }
