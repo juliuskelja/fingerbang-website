@@ -1,3 +1,7 @@
+<script>
+	let burgerOpen = false;
+</script>
+
 <header>
 	<nav>
 		<!--Logo-->
@@ -21,9 +25,20 @@
 			</div>
 		</div>
 		<!--Hamburger menu-->
-		<div class="hamburger">
-			<img src="/images/menu.png" alt="Hamburger Menu Icon" />
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div class="burgericons" on:click={() => (burgerOpen = !burgerOpen)}>
+			<img class="iconBurg" src="/images/menu.png" alt="Hamburger Menu Icon" />
+			<img class="iconClose" src="/images/close.png" alt="Hamburger Close Icon" />
 		</div>
+		{#if burgerOpen}
+			<div class="burgernav">
+				<div class="burgeritem"><a href="/">Home</a></div>
+				<div class="burgeritem"><a href="/creators">Creators</a></div>
+				<div class="burgeritem"><a href="/contact">Contact</a></div>
+			</div>
+		{/if}
+
 		<!--Play Free button-->
 		<div class="playButtonDiv">
 			<a href="https://store.steampowered.com/app/2200380/Fingerbang_All_Bullets_Pointin/">
@@ -34,6 +49,39 @@
 </header>
 
 <style>
+	.burgernav {
+		position: fixed;
+		z-index: 99;
+		width: 100vw;
+		height: auto;
+		background-color: #070707;
+		padding: 3rem 2rem 3rem 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		top: 0;
+	}
+	.burgeritem a {
+		color: rgb(239, 239, 239);
+		text-decoration: none;
+	}
+	.burgeritem a:hover {
+		text-decoration: underline;
+	}
+
+	.burgericons {
+		z-index: 100;
+		cursor: pointer;
+		margin-right: 1rem;
+		margin-left: auto;
+	}
+	.burgericons img {
+		height: auto;
+		max-width: 50px;
+	}
+	.iconClose {
+		display: none;
+	}
 	header {
 		background-color: #070707;
 		height: 5rem;
@@ -64,14 +112,6 @@
 		margin-right: 1rem;
 	}
 
-	.hamburger {
-		margin-right: 1rem;
-		margin-left: auto;
-	}
-	.hamburger img {
-		height: auto;
-		max-width: 50px;
-	}
 	.playfreeButton {
 		height: 50px;
 		width: 250px;

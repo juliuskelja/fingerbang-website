@@ -15,25 +15,25 @@
 
 	<h2 style="margin-bottom:0">Social Medias</h2>
 	<!--Social medias-->
-	<div id="socialmedias" style="padding:3rem">
-		<div class="smedia-item">
+	<div id="socialmedis" style="padding:3rem">
+		<div class="smedia-itm">
 			<a href="https://www.facebook.com/profile.php?id=100089280056541">
 				<img src="/images/facebook.png" alt="Facebook icon" /></a
 			>
 		</div>
-		<div class="smedia-item">
+		<div class="smedia-itm">
 			<a href="https://twitter.com/Fingerlab_OFCL">
 				<img src="/images/twitter.png" alt="Twitter icon" /></a
 			>
 		</div>
-		<div class="smedia-item">
+		<div class="smedia-itm">
 			<a href="https://www.linkedin.com/company/fingerlabgames/">
 				<img src="/images/linkedin.png" alt="LinkedIn icon" /></a
 			>
 		</div>
-		<div class="smedia-item">
+		<div class="smedia-itm">
 			<a href="https://www.youtube.com/channel/UCPDVSjP9SHb4D3qS0M_1nHw">
-				<img src="/images/yt.png" alt="Youtube icon" /></a
+				<img src="/images/youtube.png" alt="Youtube icon" /></a
 			>
 		</div>
 	</div>

@@ -42,6 +42,16 @@ img {
 .smedia-item {
     margin-right: 15px;
 }
+#socialmedis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.smedia-itm {
+    margin-right: 15px;
+}
 
 .verticalline {
     width: 3px;
@@ -274,6 +284,10 @@ article {
     .verticalline {
         display:none;
     }
+
+}
+@media screen and (max-width: 400px) {
+
     h2 {
         font-size: 1rem;
     }
