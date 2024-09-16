@@ -40,8 +40,6 @@ img {
 }
 
 .smedia-item {
-    width: 35px;
-    height: 35px;
     margin-right: 15px;
 }
 
@@ -149,7 +147,7 @@ article {
     width: 50vw;
 }
 .pipe {
-    width: 100%;
+    width: 100vw;
     height: 52px;
     background-repeat: repeat-x;
     background-size: contain;
@@ -269,8 +267,27 @@ article {
 
 /* Responsivity */
 
+@media screen and (max-width: 350px) {
+    .smedia-item {
+        display:none;
+    }
+    .verticalline {
+        display:none;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
 /* Extra-small devices such as small phones (less than 640px) */
 @media screen and (max-width: 640px) {
+    .pipe {
+        height: 26px !important;
+    }
+    .footer-text {
+        font-size: 0.7rem !important;
+        margin-left: 1rem;
+    }
     #toptext {
         font-size: 0.9rem !important;
     }

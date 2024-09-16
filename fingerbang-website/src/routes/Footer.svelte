@@ -22,7 +22,7 @@
 		</div>
 		<div class="smedia-item">
 			<a href="https://www.youtube.com/channel/UCPDVSjP9SHb4D3qS0M_1nHw">
-				<img src="/images/yt.png" alt="Youtube icon" /></a
+				<img src="/images/youtube.png" alt="Youtube icon" /></a
 			>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 	footer {
 		background-color: #010101;
 		height: 5rem;
-		width: 100%;
+		width: 100vw;
 		bottom: 0;
 		position: absolute;
 		font-family: 'public pixel' !important;
